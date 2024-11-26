@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- cabeçalho-->
+
+<body>
+    <link rel="stylesheet" href="style.css">
+    <header>
+        <h1>Contact</h1>
+        <nav>
+            <section>
+                <ul>
+                    <li><button onclick="location.href='index.html'">Home</button></li>
+                    <li><button onclick="location.href='contact.html'">Contact</button></li>
+                    <li><button onclick="location.href='portfolio.html'">Portfolio</button></li>
+                    <li><button onclick="location.href='rules.html'">Rules</button></li>
+                    <li><button onclick="location.href='languages.html'">Languages</button></li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+    <!--formulario-->
+    <main>
+        <section class="formulario">
+            <h2>Envie uma mensagem</h2>
+            <form action="submit_form.html" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+            
+            <div class="week-grid">
+                <div>Domingo</div>
+                <div>Segunda</div>
+                <div>Terça</div>
+                <div>Quarta</div>
+                <div>Quinta</div>
+                <div>Sexta</div>
+                <div>Sábado</div>
+            </div>
+            <p>estarei disponivel para reunião nos seguintes dias da semana
+            </p>
+        </section>
+    </main>
+    <!--rodape-->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.x.com" target="_blank">X</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+        <div class="Direitos">
+            <p>Todos os direitos reservados - 2024</p>
+        </div>
+    </footer>
+</body>
+
+</html>
