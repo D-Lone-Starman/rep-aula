@@ -1,0 +1,23 @@
+// _footer.scss
+
+footer {
+    background-color: $background-dark;
+    color: $text-color;
+    text-align: center;
+    padding: 1.5rem 0;
+  
+    .social-links a {
+      color: $text-color;
+      margin: 0 0.5rem;
+      text-decoration: none;
+  
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  
+    p {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+  }
