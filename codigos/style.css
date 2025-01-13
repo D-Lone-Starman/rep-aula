@@ -272,6 +272,22 @@ footer ul li:nth-child(5) span {
     text-decoration: underline;
 }
 
+/* animação type writer*/
+.container {display: inline-block;}
+
+.text {
+    font-size: 5em;
+    letter-spacing: 10px;
+    font-family: monospace;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(18),
+        cursor .4s step-end infinite alternate;
+}
+
+
 /* animação loading*/
 .loader
 {
@@ -279,6 +295,7 @@ footer ul li:nth-child(5) span {
     height: 150px;
     position: relative;
 }
+/* concertar depois da academia
 span
 {
     position: absolute;
@@ -317,7 +334,7 @@ span:nth-child(1){
 
     100% { top: 0; left: 0;}
 } 
-
+*/
 
 /* Media Queries */
 @media (min-width: 600px) {
