@@ -272,20 +272,61 @@ footer ul li:nth-child(5) span {
     text-decoration: underline;
 }
 
-/* animação type writer*/
-.container {display: inline-block;}
+/* animação typewriter*/
+.corpo {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.container {
+    max-width: 100%; /* Ocupa toda a largura em dispositivos móveis */
+    margin: 0 auto; /* Centraliza o contêiner */
+    text-align: center; /* Centraliza o texto */
+}
+
+img {
+    max-width: 200px; /* Define o tamanho máximo da largura */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Mantém o formato circular */
+    margin: 0 auto; /* Centraliza a imagem */
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        text-align: left; /* Texto alinhado à esquerda em telas maiores */
+    }
+}
 
 .text {
-    font-size: 5em;
-    letter-spacing: 10px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 15px;
     font-family: monospace;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
+    display: inline-block; /* Faz com que o texto se ajuste dinamicamente */
+    word-break: break-word; 
+    border-right: 2px solid black; /* Adiciona o cursor piscando */
     animation: 
-        typing 2s steps(18),
-        cursor .4s step-end infinite alternate;
+        typing 5s steps(30, end), /* Ajuste o tempo e steps conforme necessário */
+        cursor 0.5s step-end infinite;
 }
+
+
+@keyframes cursor {
+    0% { border-color: black; }
+    50% { border-color: transparent; }
+    100% { border-color: black; }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; } /* Ajusta para caber no contêiner pai */
+}
+
+/* Para o contêiner */
+
 
 
 /* animação loading*/
